@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "RedDot Ruby Conf, Singapore"
-date: 2012-12-11 23:06
+date: 2011-05-01 12:00
 comments: true
 categories: conference reddot ruby singapore
 ---
