@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: clojure | Clarence's Coding Journal]]></title>
+  <link href="http://clarenceb.github.io/blog/categories/clojure/atom.xml" rel="self"/>
+  <link href="http://clarenceb.github.io/"/>
+  <updated>2013-08-04T23:35:21+10:00</updated>
+  <id>http://clarenceb.github.io/</id>
+  <author>
+    <name><![CDATA[Clarence Bakirtzidis]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Learning Clojure]]></title>
+    <link href="http://clarenceb.github.io/blog/2013/08/04/learning-clojure/"/>
+    <updated>2013-08-04T22:48:00+10:00</updated>
+    <id>http://clarenceb.github.io/blog/2013/08/04/learning-clojure</id>
+    <content type="html"><![CDATA[<h2>The land of Clojure goodness</h2>
+
+<p>A couple of weeks ago I rolled off from my previous client and I joined an existing project at a new client.   My new project has already been active for about a year now.  The interesting thing from a technology point of view is that the core language used on this project is <a href="http://clojure.org/">Clojure</a>.   The prospect of learning and using a functional programming language like Clojure is very exciting for me as I spent the last several months on a project where the main language used was good old boring Java.</p>
+
+<p>Most of my career I&rsquo;ve been doing imperative-style programming, usually in the form of Object-Oriented programming.  Earlier this year I tried my hand at <a href="http://www.scala-lang.org/">Scala</a> by following along in the excellent <a href="http://www.coursera.org/">Coursera</a> course <a href="https://www.coursera.org/course/progfun">Functional Programming Principles in Scala</a>.  This course taught me a few of the fundamental Functional Programming concepts so I wasn&rsquo;t completely new going into Clojure.</p>
+
+<h2>What is Clojure?</h2>
+
+<p>Briefly, Clojure is a general purpose, functional, dynamic programming language which targets the Java Virtual Machine (JVM).    Clojure is a dialect of Lisp.  I remember learning Lisp when I was at University and I remember all the peculiar nested parentheses that confused me at times.  Luckily, Clojure makes some trade-offs in favour of wider adoption and accessibility to mainstream developers over being a pure Lisp clone.  This means that you&rsquo;ll see syntactic sugar and other data structures &ndash; not everything is a list.</p>
+
+<h2>Where did I start my learning?</h2>
+
+<p>Luckily, I had a couple of days before starting on my new project to get some exposure to Clojure.  I started with the awesome <a href="http://clojurekoans.com/">Clojure Koans</a>.  The Koans are mini exercises where you fix failing tests by writing code and you follow a learning path through the main parts of Clojure.  Next, I started looking at <a href="http://www.4clojure.com/">4Clojure.com</a> where you solve progressively harder problems by filling in code snippets and submitting your solution &ndash; this is entirely web based so no extra tools are required though you should have some basic Clojure knowledge first.</p>
+
+<h2>How is going so far?</h2>
+
+<p>I&rsquo;m lucky in that I am in an awesome, supportive team that practices pair programming on all user stories.  This means that in the two short weeks that I have been on my project I have picked up a fair amount of Clojure and learnt some useful tips from experienced Clojure developers.  Clojure is mostly used in the backed services on my project and the front-end makes use of <a href="http://angularjs.org/">AngularJS</a>.  This means that I am dividing my time between learning Clojure and AngularJS (which is also new for me).</p>
+
+<p>So far I&rsquo;m finding Clojure to be a very powerful and productive language.  It reminds me of the &ldquo;wow&rdquo; moment I experienced when I first started learning <a href="http://www.ruby-lang.org/">Ruby</a> after having spent a lot of time in C# and Java.  The first thing I noticed was how little code was required to implement a feature and without excessive ceremony and boilerplate code.</p>
+
+<h2>Tooling</h2>
+
+<p>I am using Leiningen from the commandline for most build and testing tasks but using <a href="http://www.jetbrains.com/idea/">IntelliJ IDEA</a> with the <a href="http://plugins.jetbrains.com/plugin?pluginId=4050">La Clojure plugin</a> for code editing, navigation and refactoring.  IntelliJ was chosen by the team I joined so I am just sticking with that for now.  Another team using Clojure at my current client develops in <a href="http://www.jetbrains.com/idea/">Emacs</a>.  I&rsquo;m keen to try out Emacs when I am a bit more confident with Clojure as I don&rsquo;t want to introduce too many new things at once!</p>
+
+<h2>What&rsquo;s next?</h2>
+
+<p>I&rsquo;m currently going through the book <a href="http://pragprog.com/book/shcloj2/programming-clojure">Programming Clojure (2nd edition)</a> by Stuart Halloway and Aaron Bedra to gain a bit more depth and breadth in Clojure.  However, I expect to get better at it through practice and pairing on a real production codebase (i.e. my client project described earlier).</p>
+]]></content>
+  </entry>
+  
+</feed>

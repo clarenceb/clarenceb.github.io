@@ -1,113 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Clarence's Coding Journal</title>
-  <meta name="author" content="Clarence Bakirtzidis">
-
-  
-  <meta name="description" content="The land of Clojure goodness A couple of weeks ago I rolled off from my previous client and I joined an existing project at a new client. My new &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://clarenceb.github.io">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Clarence's Coding Journal" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-33185810-3']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
-
-
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">Clarence's Coding Journal</a></h1>
-  
-    <h2>My software development experiences.</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:clarenceb.github.io" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-  <li><a href="/about">About Me</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
+  <title><![CDATA[Clarence's Coding Journal]]></title>
+  <link href="http://clarenceb.github.io/atom.xml" rel="self"/>
+  <link href="http://clarenceb.github.io/"/>
+  <updated>2013-08-04T23:35:21+10:00</updated>
+  <id>http://clarenceb.github.io/</id>
+  <author>
+    <name><![CDATA[Clarence Bakirtzidis]]></name>
     
-      <h1 class="entry-title"><a href="/blog/2013/08/04/learning-clojure/">Learning Clojure</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-
-
-<time datetime="2013-08-04T22:48:00+10:00" pubdate data-updated="true">Aug 4<span>th</span>, 2013</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>The land of Clojure goodness</h2>
+  <entry>
+    <title type="html"><![CDATA[Learning Clojure]]></title>
+    <link href="http://clarenceb.github.io/blog/2013/08/04/learning-clojure/"/>
+    <updated>2013-08-04T22:48:00+10:00</updated>
+    <id>http://clarenceb.github.io/blog/2013/08/04/learning-clojure</id>
+    <content type="html"><![CDATA[<h2>The land of Clojure goodness</h2>
 
 <p>A couple of weeks ago I rolled off from my previous client and I joined an existing project at a new client.   My new project has already been active for about a year now.  The interesting thing from a technology point of view is that the core language used on this project is <a href="http://clojure.org/">Clojure</a>.   The prospect of learning and using a functional programming language like Clojure is very exciting for me as I spent the last several months on a project where the main language used was good old boring Java.</p>
 
@@ -134,42 +45,15 @@
 <h2>What&rsquo;s next?</h2>
 
 <p>I&rsquo;m currently going through the book <a href="http://pragprog.com/book/shcloj2/programming-clojure">Programming Clojure (2nd edition)</a> by Stuart Halloway and Aaron Bedra to gain a bit more depth and breadth in Clojure.  However, I expect to get better at it through practice and pairing on a real production codebase (i.e. my client project described earlier).</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/09/04/viewing-git-history-in-summary-form/">Viewing Git History in Summary Form</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-09-04T12:00:00+10:00" pubdate data-updated="true">Sep 4<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I use this one all the time for getting a nice summary of git commits:</p>
+  <entry>
+    <title type="html"><![CDATA[Viewing Git History in Summary Form]]></title>
+    <link href="http://clarenceb.github.io/blog/2012/09/04/viewing-git-history-in-summary-form/"/>
+    <updated>2012-09-04T12:00:00+10:00</updated>
+    <id>http://clarenceb.github.io/blog/2012/09/04/viewing-git-history-in-summary-form</id>
+    <content type="html"><![CDATA[<p>I use this one all the time for getting a nice summary of git commits:</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short</span></code></pre></td></tr></table></div></figure>
@@ -222,42 +106,15 @@
 
 
 <p>I got this tip from the following git tutorial site: <a href="http://gitimmersion.com/">http://gitimmersion.com</a></p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/05/getting-wireless-internet-working-on-centos-6-on-your-macbook-pro/">Getting Wireless Internet Working on Centos 6 on Your MacBook Pro</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-05T12:00:00+10:00" pubdate data-updated="true">Jul 5<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>At home I have been setting up CentOS 6.2 on a spare MacBook Pro (thanks to my IS friend at work) for learning about RHEL 6.  Since I use a wireless router, I wanted to get a wireless connection setup on the laptop.  The MacBook Pros use a Broadcom wireless NIC:</p>
+  <entry>
+    <title type="html"><![CDATA[Getting Wireless Internet Working on Centos 6 on your MacBook Pro]]></title>
+    <link href="http://clarenceb.github.io/blog/2012/07/05/getting-wireless-internet-working-on-centos-6-on-your-macbook-pro/"/>
+    <updated>2012-07-05T12:00:00+10:00</updated>
+    <id>http://clarenceb.github.io/blog/2012/07/05/getting-wireless-internet-working-on-centos-6-on-your-macbook-pro</id>
+    <content type="html"><![CDATA[<p>At home I have been setting up CentOS 6.2 on a spare MacBook Pro (thanks to my IS friend at work) for learning about RHEL 6.  Since I use a wireless router, I wanted to get a wireless connection setup on the laptop.  The MacBook Pros use a Broadcom wireless NIC:</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -286,42 +143,15 @@
 
 
 <p>From then onwards it should just work!</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/05/16/aws-summit/">AWS Summit, Melbourne</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-05-16T12:00:00+10:00" pubdate data-updated="true">May 16<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Yesterday (15th May 2012), I attended the <a href="http://aws.amazon.com/apac/awssummit-au/">AWS Summit</a> in Melbourne.  This was a single day event covering the future of the AWS Cloud and incorporating some deeper dive sessions.  In the middle of the day there were three (3) breakout tracks.  I attended the AWS &ldquo;Ninja&rdquo; Training track (the other two were Executive and Architecture tracks).</p>
+  <entry>
+    <title type="html"><![CDATA[AWS Summit, Melbourne]]></title>
+    <link href="http://clarenceb.github.io/blog/2012/05/16/aws-summit/"/>
+    <updated>2012-05-16T12:00:00+10:00</updated>
+    <id>http://clarenceb.github.io/blog/2012/05/16/aws-summit</id>
+    <content type="html"><![CDATA[<p>Yesterday (15th May 2012), I attended the <a href="http://aws.amazon.com/apac/awssummit-au/">AWS Summit</a> in Melbourne.  This was a single day event covering the future of the AWS Cloud and incorporating some deeper dive sessions.  In the middle of the day there were three (3) breakout tracks.  I attended the AWS &ldquo;Ninja&rdquo; Training track (the other two were Executive and Architecture tracks).</p>
 
 <p>Most of the sessions were by Amazon AWS speakers; except for a couple by ThoughtWorks and one by TrendMicro.  I particularly liked the &ldquo;Continuous Delivery in the Cloud, The Devops Warrior Workshop&rdquo; session by Nigel Fernandes and Fabio Lessa of ThoughtWorks; mostly because it was a bit deeper than the other sessions and showed some real-world application of Continuous Delivery on the AWS cloud.</p>
 
@@ -344,42 +174,15 @@
 
 
 <p>There was also mention of the <a href="http://reinvent.awsevents.com/">AWS re:Invent</a> conference later in the year in Las Vegas.  I&rsquo;ll see if I can use my training budget for this :)</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/03/08/checking-your-github-ssh-key-fingerprints/">Checking Your GitHub SSH Key Fingerprints</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-03-08T12:00:00+11:00" pubdate data-updated="true">Mar 8<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Regular GitHub users are probably aware of the recent GitHub <a href="https://github.com/blog/1068-public-key-security-vulnerability-and-mitigation">security vulnerability</a> that was exploited by this <a href="http://homakov.blogspot.com.au/2012/03/im-disappoint-github.html">fellow</a>. You&rsquo;ve also probably just received instructions via email to <a href="https://github.com/settings/ssh/audit">audit</a> your SSH keys.  An easy way to do this is to run following command on your SSH key(s) stored on your computer:</p>
+  <entry>
+    <title type="html"><![CDATA[Checking your GitHub SSH Key Fingerprints]]></title>
+    <link href="http://clarenceb.github.io/blog/2012/03/08/checking-your-github-ssh-key-fingerprints/"/>
+    <updated>2012-03-08T12:00:00+11:00</updated>
+    <id>http://clarenceb.github.io/blog/2012/03/08/checking-your-github-ssh-key-fingerprints</id>
+    <content type="html"><![CDATA[<p>Regular GitHub users are probably aware of the recent GitHub <a href="https://github.com/blog/1068-public-key-security-vulnerability-and-mitigation">security vulnerability</a> that was exploited by this <a href="http://homakov.blogspot.com.au/2012/03/im-disappoint-github.html">fellow</a>. You&rsquo;ve also probably just received instructions via email to <a href="https://github.com/settings/ssh/audit">audit</a> your SSH keys.  An easy way to do this is to run following command on your SSH key(s) stored on your computer:</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>ssh-keygen -lf &lt;path_to_your_public_ssh_key&gt;</span></code></pre></td></tr></table></div></figure>
@@ -398,119 +201,77 @@
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>d3:c7:8d:73:b4:6e:00:5d:ce:c6:85:04:9e:6c:67:51</span></code></pre></td></tr></table></div></figure>
 
-</div>
+]]></content>
+  </entry>
   
+  <entry>
+    <title type="html"><![CDATA[RedDot Ruby Conf, Singapore]]></title>
+    <link href="http://clarenceb.github.io/blog/2011/05/01/reddot-ruby-conf/"/>
+    <updated>2011-05-01T12:00:00+10:00</updated>
+    <id>http://clarenceb.github.io/blog/2011/05/01/reddot-ruby-conf</id>
+    <content type="html"><![CDATA[<p>On the Easter weekend I attended Singapore&rsquo;s first ever Ruby conference (called &ldquo;<a href="http://reddotrubyconf.com/">RedDotRubyConf</a>&rdquo;).  It was held at the <a href="http://www.smu.edu.sg/">Singapore Management University</a> (SMU) on Friday, 22nd and Saturday, 23rd April 2011.  It attracted around 240 attendees from Singapore, Hong Kong, Indonesia, Phillipines, Vietnam, Cambodia, Japan, Australia, USA, and other countries.</p>
+
+<p>The first day started off with registrations where we each got a conference t-shirt and a bag of goodies including a <a href="http://twitpic.com/4o0lpt">Field Notes Memo Book</a> and GitHub sponsored <a href="http://twitpic.com/4o0nj1">drink vouchers</a>.  After downing our favourite beverages (coffee, Coke Zero, tea or bottled water) the welcome note started off with <a href="https://twitter.com/#!/andycroll">Andy Croll</a> (conference organiser).</p>
+
+<p>The first speaker was <a href="https://twitter.com/#!/imf">Ian McFarland</a> from <a href="http://pivotallabs.com/">Pivotal Labs</a> (they are one of the main sponsors of the event), making up for <a href="http://en.wikipedia.org/wiki/Yukihiro_Matsumoto">Matz&rsquo;s</a> late arrival to the stage.  He spoke about Ruby and Agile with some key points on test-driving everything, TDD/BDD, iterative development, continuous integration, the importance and benefits of pair-programming, keeping an &ldquo;anchor&rdquo; team member on a project when members roll-off and roll-on to get them up to speed, having productive workspaces and not working more than 8 hours a day.  He also gave a nice insight into how Pivotal Labs work with clients on projects and a look at their office space &ndash; quite impressive.</p>
+
+<p>Matz (<a href="http://en.wikipedia.org/wiki/Yukihiro_Matsumoto">Yukihiro Matsumoto</a>) came on second and was a much anticipated speaker for obvious reasons! He spoke about Ruby&rsquo;s humble beginnings and how it has grown over the years to where it is today &ndash; a large, vibrant, inclusive and friendly community (MINSWAN &ndash; &ldquo;Matz is nice, so we are nice&rdquo;).  Even <a href="http://martinfowler.com/">Martin Fowler</a> got a special mention as being one of these nice people in the community.  He also mentioned that although Ruby is not the fastest, simplest, or easiest language to learn, it does have &ldquo;The Nice Community&rdquo; which he sees as very important and that other open source software sometimes lacks.  Although Ruby is productive and fun, he thinks we should keep advancing the technology before &ldquo;the shark&rdquo; catches up to it/us; this will ensure Ruby has a long and prosperous life ahead.</p>
+
+<p>One last thing Matz talked about was the Ruby Rite VM that he is currently working on and plans to release by the end of 2011.  It targets embedded environments and has a very configurable and component based approach to allow a small footprint that only includes the part of Ruby that are needed.  He thinks Rite VM will give the Lua programming language a run for its money in the embedded programming space since Ruby is a fully-featured objected-oriented language.</p>
+
+<p>The remaining talks were very good and covered diverse topics like using the <a href="http://www.r-project.org/">&lsquo;R&rsquo; programming language</a> from Ruby, Agile testing, deploying with <a href="http://wiki.opscode.com/display/chef/Home">Chef</a>, multi-tenancy in Rails,  Agile in real-life (a client&rsquo;s view), advanced git techniques, under the covers in Rails 3, Smalltalk and what Ruby borrowed from it, building financial apps in Rails, how to make outsourcing Rails projects successful, and lots more cool topics.</p>
+
+<p>Overall, I was very impressed by the event because it was well organised, it had quality presenters, the content was interesting, and it had clearly evident theme of participation, inclusiveness, helpfulness of the Ruby community and giving back to the community.  Quite a few big names (both companies and individuals) in the Ruby community were present which made the conference even more of a success.  It looks like I was the only ThoughWorker there but I did meet a few fellow Australians and bumped into an ex-client developer, <a href="http://twitpic.com/4o0yye">Keith Pitt</a>, who worked on a Rails project with me about a year ago.</p>
+
+<p>Other than Ruby and its community, the other main theme was around Agile software development.  I think Pivotal Labs stole the show as they had a few speakers and attendees present and they explained and showed how they work on their projects.</p>
+
+<p>Practically every company that presented said they were hiring Ruby developers and on the second day of the conference there was a hiring fair so that companies didn&rsquo;t have to scramble over themselves and poach from each other.  They also ran a coding competition with a MacBook Air as the prize (put up by <a href="http://www.viki.com/">ViKi</a>) and no doubt used the results of that to put forward some job offers.</p>
+
+<p>I think there is a lot of interest in Ruby and Agile in Singapore judging by the attendance record and the fact that attendees came from all over the world.</p>
+
+<p>The highlights of the conference for me would have to be:</p>
+
+<ul>
+<li>Yukihiro &lsquo;Matz&rsquo; Matsumoto &ndash; the creator of the Ruby language &ndash; presenting his view of the future of Ruby (check out my <a href="http://twitpic.com/4rx404">fan pic</a> and also who he thinks is part of the <a href="http://twitpic.com/4o19pk">Nice Community</a> hehe)</li>
+<li>Dave Thomas &ndash; Pragmatic Programmers, his talk was well received by the locals</li>
+<li>Tom Preston-Werner &ndash; the co-founder of Github (mostly for the free <a href="http://twitpic.com/4o0nj1">drink vouchers</a> perhaps!)</li>
+</ul>
+
+
+<p>I&rsquo;m looking for to attending again next year!</p>
+]]></content>
+  </entry>
   
+  <entry>
+    <title type="html"><![CDATA[Software Development Sea Change]]></title>
+    <link href="http://clarenceb.github.io/blog/2011/01/14/software-development-sea-change/"/>
+    <updated>2011-01-14T12:00:00+11:00</updated>
+    <id>http://clarenceb.github.io/blog/2011/01/14/software-development-sea-change</id>
+    <content type="html"><![CDATA[<p>Prior to joining ThoughtWorks I was mostly developing using Microsoft-based technologies on the .NET platform.  Whilst there are some nice things on this platform (C# being one of them) I felt it was time for a change and to try taking some risks by moving into the uncharted territory called &ldquo;open source&rdquo;.</p>
+
+<p>My first project, after 3 weeks on the beach (i.e. the bench, only more pleasant and sunny), was a Ruby on Rails project.  I had heard of Ruby and even had a passing stab at writing something equivalent of the &ldquo;15 minute blog&rdquo; website. This was the kind of challenge I was looking for &ndash; something out of my depth and exciting.  Lucky for me, the team I joined was <em>awesome</em> and because we pair quite extensively on ThoughtWorks projects I was somewhat productive after about 2 weeks.</p>
+
+<p>After a year of Ruby/Rails projects I still feel like a newbie compared to the 5.5+ years I spent doing C# (and then several years doing Java, C++, etc, before that).  Looking back I think learning &ldquo;Ruby&rdquo; and &ldquo;Rails&rdquo; was only part of the challenge.  I was really working with tools, IDEs, and platforms completely alien to me, such as: Mac OS X, CentOS and Ubuntu Linux, RubyMine IDE, TextMate, Cucumber, RSpec, Selenium, PostgreSQL, MySQL, dozens of Ruby gems, Git, Github, Mercurial, Android SDK, Eclipse, Maven, JMeter, and lots more.</p>
+
+<p>This initially made me feel quite uncomfortable as I was leaving my familiar Windows, Visual Studio and .NET environments behind.  With so many new variables introduced at the one time there was certainly plenty to keep me busy.  Apart from the technology landscape changes I was also thrust into the world of Agile software development.</p>
+
+<p>A year and a half later I am on a Ruby on Rails project again targeting smart phones (like Android and iPhone) and also desktop web users.  The whole infrastructure is deployed &ldquo;in the cloud&rdquo; using Amazon Web Services (AWS). It&rsquo;s really a great project with a great team.  I am still learning and still feel like a newbie at times but when I look back I can see how far I have come.</p>
+
+<p>Some of the books that inspired me along the way include:</p>
+
+<ul>
+<li><a href="http://pragprog.com/book/tpp/the-pragmatic-programmer">The Pragmatic Programmer: From Journeyman to Master</a></li>
+<li><a href="http://pragprog.com/book/pad/practices-of-an-agile-developer">Practices of an Agile Developer: Working in the Real World</a></li>
+<li><a href="http://pragprog.com/book/sdcoach/agile-coaching">Agile Coaching</a></li>
+<li><a href="http://www.amazon.com/Lean-Software-Development-Agile-Toolkit/dp/0321150783">Lean Software Development: An Agile Toolkit</a></li>
+<li><a href="http://pragprog.com/book/cfcar2/the-passionate-programmer">The Passionate Programmer: Creating a Remarkable Career in Software Development</a> (this one in particular, definitely worth the read!)</li>
+</ul>
 
 
-    </article>
+<p>So if you are feeling bored with your current job or looking for a change I can only say &ldquo;Just do it!&rdquo; (thanks to Nike for that one).</p>
+
+<p><strong><em>Side note</em></strong>: I have been on a .NET project as well in this time (mostly in a coaching role) and we certainly do our fair share of .NET work at ThoughtWorks.  .NET is something I am still keeping my eye on with .NET 4, ASP.NET MVC 3, and other interesting developments in the pipeline. However, now I would certainly consider open-source technologies and not limit myself to proprietary software.</p>
+]]></content>
+  </entry>
   
-  <div class="pagination">
-    
-      <a class="prev" href="/blog/page/2/">&larr; Older</a>
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
-<aside class="sidebar">
-  
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2013/08/04/learning-clojure/">Learning Clojure</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/09/04/viewing-git-history-in-summary-form/">Viewing Git History in Summary Form</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/07/05/getting-wireless-internet-working-on-centos-6-on-your-macbook-pro/">Getting Wireless Internet Working on Centos 6 on Your MacBook Pro</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/05/16/aws-summit/">AWS Summit, Melbourne</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/03/08/checking-your-github-ssh-key-fingerprints/">Checking Your GitHub SSH Key Fingerprints</a>
-      </li>
-    
-  </ul>
-</section>
-
-<section>
-  <h1>Latest Tweets</h1>
-  <ul id="tweets">
-    <li class="loading">Status updating&#8230;</li>
-  </ul>
-  <script type="text/javascript">
-    $.domReady(function(){
-      getTwitterFeed("clarenceb_oz", 4, false);
-    });
-  </script>
-  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
-  
-    <a href="http://twitter.com/clarenceb_oz" class="twitter-follow-button" data-show-count="false">Follow @clarenceb_oz</a>
-  
-</section>
-
-
-<section>
-  <h1>On Delicious</h1>
-  <div id="delicious"></div>
-  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/clarbak?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
-  <p><a href="http://delicious.com/clarbak">My Delicious Bookmarks &raquo;</a></p>
-</section>
-
-  
-</aside>
-
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2013 - Clarence Bakirtzidis -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
-
-</footer>
-  
-
-<script type="text/javascript">
-      var disqus_shortname = 'clarencesblog';
-      
-        
-        var disqus_script = 'count.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
-
-
-
-
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-</body>
-</html>
+</feed>

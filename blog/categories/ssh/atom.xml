@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ssh | Clarence's Coding Journal]]></title>
+  <link href="http://clarenceb.github.io/blog/categories/ssh/atom.xml" rel="self"/>
+  <link href="http://clarenceb.github.io/"/>
+  <updated>2013-08-04T23:35:21+10:00</updated>
+  <id>http://clarenceb.github.io/</id>
+  <author>
+    <name><![CDATA[Clarence Bakirtzidis]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Checking your GitHub SSH Key Fingerprints]]></title>
+    <link href="http://clarenceb.github.io/blog/2012/03/08/checking-your-github-ssh-key-fingerprints/"/>
+    <updated>2012-03-08T12:00:00+11:00</updated>
+    <id>http://clarenceb.github.io/blog/2012/03/08/checking-your-github-ssh-key-fingerprints</id>
+    <content type="html"><![CDATA[<p>Regular GitHub users are probably aware of the recent GitHub <a href="https://github.com/blog/1068-public-key-security-vulnerability-and-mitigation">security vulnerability</a> that was exploited by this <a href="http://homakov.blogspot.com.au/2012/03/im-disappoint-github.html">fellow</a>. You&rsquo;ve also probably just received instructions via email to <a href="https://github.com/settings/ssh/audit">audit</a> your SSH keys.  An easy way to do this is to run following command on your SSH key(s) stored on your computer:
+<code>
+ssh-keygen -lf &lt;path_to_your_public_ssh_key&gt;
+</code>
+This will then display the fingerprint of your public key which you can then compare to fingerprint displayed next to your public key on GitHub.</p>
+
+<p>Example:
+<code>
+ssh-keygen -lf dummy.pub  2048 d3:c7:8d:73:b4:6e:00:5d:ce:c6:85:04:9e:6c:67:51 dummy.pub (RSA)
+</code>
+In this case, the fingerprint is the part:
+<code>
+d3:c7:8d:73:b4:6e:00:5d:ce:c6:85:04:9e:6c:67:51
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>

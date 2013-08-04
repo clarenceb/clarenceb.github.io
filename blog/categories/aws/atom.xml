@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: aws | Clarence's Coding Journal]]></title>
+  <link href="http://clarenceb.github.io/blog/categories/aws/atom.xml" rel="self"/>
+  <link href="http://clarenceb.github.io/"/>
+  <updated>2013-08-04T23:35:21+10:00</updated>
+  <id>http://clarenceb.github.io/</id>
+  <author>
+    <name><![CDATA[Clarence Bakirtzidis]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[AWS Summit, Melbourne]]></title>
+    <link href="http://clarenceb.github.io/blog/2012/05/16/aws-summit/"/>
+    <updated>2012-05-16T12:00:00+10:00</updated>
+    <id>http://clarenceb.github.io/blog/2012/05/16/aws-summit</id>
+    <content type="html"><![CDATA[<p>Yesterday (15th May 2012), I attended the <a href="http://aws.amazon.com/apac/awssummit-au/">AWS Summit</a> in Melbourne.  This was a single day event covering the future of the AWS Cloud and incorporating some deeper dive sessions.  In the middle of the day there were three (3) breakout tracks.  I attended the AWS &ldquo;Ninja&rdquo; Training track (the other two were Executive and Architecture tracks).</p>
+
+<p>Most of the sessions were by Amazon AWS speakers; except for a couple by ThoughtWorks and one by TrendMicro.  I particularly liked the &ldquo;Continuous Delivery in the Cloud, The Devops Warrior Workshop&rdquo; session by Nigel Fernandes and Fabio Lessa of ThoughtWorks; mostly because it was a bit deeper than the other sessions and showed some real-world application of Continuous Delivery on the AWS cloud.</p>
+
+<p>The presentations and supplemental materials will be available in about a week&rsquo;s time at the following URL: <a href="http://aws.amazon.com/awssummit">http://aws.amazon.com/awssummit</a>.  Nigel and Fabio&rsquo;s code for the presentation are on Github and will be referenced in the slides that are published.</p>
+
+<p>The event is being repeated tomorrow in Sydney.  To follow along on Twitter, see the hashtag: <a href="https://twitter.com/#!/search/%23awssummit">#awssummit</a>.</p>
+
+<p>Some useful topics/resources mentioned in various talk were:</p>
+
+<ul>
+<li>Guidance for designing different types of applications in the cloud at <a href="http://aws.amazon.com/architecture/">AWS Reference Architectures</a></li>
+<li>Automating the provisioning of AWS resources with <a href="http://aws.amazon.com/cloudformation/">CloudFormation</a> and building CloudFormation templates with <a href="http://aws.amazon.com/developertools/6460180344805680">CloudFormer</a> from an existing set of resources</li>
+<li>Taking advantage of <a href="http://aws.amazon.com/autoscaling/">Auto Scaling</a> to automatically scale your fleet of servers up or down; particularly <a href="http://docs.amazonwebservices.com/AutoScaling/latest/DeveloperGuide/scaling_typesof.html">Scaling by Policy</a></li>
+<li>Using <a href="http://aws.amazon.com/elasticache/">ElasticCache</a> for storing user session data in memory externally from your web tier to allow scaling up/down and deploys to happen more easily</li>
+<li>Using <a href="http://aws.amazon.com/iam/">IAM</a> credentials in EC2 AMIs rather than your AWS credentials to limit potential damage if credentials are compromised</li>
+<li>Bootstrapping launched AMIs via User Data scripts (e.g. passing in credentials)</li>
+<li>Taking advantage of metadata <a href="http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/Using_Tags.html">Tags</a> on AWS resources to more easily manage them</li>
+<li>Using <a href="http://aws.amazon.com/dynamodb/">DynamoDB</a> to support <a href="http://en.wikipedia.org/wiki/Big_data">Big Data</a> scenarios and have a fully managed and scalable database</li>
+</ul>
+
+
+<p>There was also mention of the <a href="http://reinvent.awsevents.com/">AWS re:Invent</a> conference later in the year in Las Vegas.  I&rsquo;ll see if I can use my training budget for this :)</p>
+]]></content>
+  </entry>
+  
+</feed>

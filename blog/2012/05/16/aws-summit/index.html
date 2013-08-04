@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>AWS Summit, Melbourne - Clarence's Coding Journal</title>
+  <meta name="author" content="Clarence Bakirtzidis">
+
+  
+  <meta name="description" content="Yesterday (15th May 2012), I attended the AWS Summit in Melbourne. This was a single day event covering the future of the AWS Cloud and incorporating &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://clarenceb.github.io/blog/2012/05/16/aws-summit">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Clarence's Coding Journal" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-33185810-3']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Clarence's Coding Journal</a></h1>
+  
+    <h2>My software development experiences.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:clarenceb.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About Me</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">AWS Summit, Melbourne</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-05-16T12:00:00+10:00" pubdate data-updated="true">May 16<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Yesterday (15th May 2012), I attended the <a href="http://aws.amazon.com/apac/awssummit-au/">AWS Summit</a> in Melbourne.  This was a single day event covering the future of the AWS Cloud and incorporating some deeper dive sessions.  In the middle of the day there were three (3) breakout tracks.  I attended the AWS &ldquo;Ninja&rdquo; Training track (the other two were Executive and Architecture tracks).</p>
+
+<p>Most of the sessions were by Amazon AWS speakers; except for a couple by ThoughtWorks and one by TrendMicro.  I particularly liked the &ldquo;Continuous Delivery in the Cloud, The Devops Warrior Workshop&rdquo; session by Nigel Fernandes and Fabio Lessa of ThoughtWorks; mostly because it was a bit deeper than the other sessions and showed some real-world application of Continuous Delivery on the AWS cloud.</p>
+
+<p>The presentations and supplemental materials will be available in about a week&rsquo;s time at the following URL: <a href="http://aws.amazon.com/awssummit">http://aws.amazon.com/awssummit</a>.  Nigel and Fabio&rsquo;s code for the presentation are on Github and will be referenced in the slides that are published.</p>
+
+<p>The event is being repeated tomorrow in Sydney.  To follow along on Twitter, see the hashtag: <a href="https://twitter.com/#!/search/%23awssummit">#awssummit</a>.</p>
+
+<p>Some useful topics/resources mentioned in various talk were:</p>
+
+<ul>
+<li>Guidance for designing different types of applications in the cloud at <a href="http://aws.amazon.com/architecture/">AWS Reference Architectures</a></li>
+<li>Automating the provisioning of AWS resources with <a href="http://aws.amazon.com/cloudformation/">CloudFormation</a> and building CloudFormation templates with <a href="http://aws.amazon.com/developertools/6460180344805680">CloudFormer</a> from an existing set of resources</li>
+<li>Taking advantage of <a href="http://aws.amazon.com/autoscaling/">Auto Scaling</a> to automatically scale your fleet of servers up or down; particularly <a href="http://docs.amazonwebservices.com/AutoScaling/latest/DeveloperGuide/scaling_typesof.html">Scaling by Policy</a></li>
+<li>Using <a href="http://aws.amazon.com/elasticache/">ElasticCache</a> for storing user session data in memory externally from your web tier to allow scaling up/down and deploys to happen more easily</li>
+<li>Using <a href="http://aws.amazon.com/iam/">IAM</a> credentials in EC2 AMIs rather than your AWS credentials to limit potential damage if credentials are compromised</li>
+<li>Bootstrapping launched AMIs via User Data scripts (e.g. passing in credentials)</li>
+<li>Taking advantage of metadata <a href="http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/Using_Tags.html">Tags</a> on AWS resources to more easily manage them</li>
+<li>Using <a href="http://aws.amazon.com/dynamodb/">DynamoDB</a> to support <a href="http://en.wikipedia.org/wiki/Big_data">Big Data</a> scenarios and have a fully managed and scalable database</li>
+</ul>
+
+
+<p>There was also mention of the <a href="http://reinvent.awsevents.com/">AWS re:Invent</a> conference later in the year in Las Vegas.  I&rsquo;ll see if I can use my training budget for this :)</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Clarence Bakirtzidis</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-05-16T12:00:00+10:00" pubdate data-updated="true">May 16<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/aws/'>aws</a>, <a class='category' href='/blog/categories/cloud/'>cloud</a>, <a class='category' href='/blog/categories/conference/'>conference</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/03/08/checking-your-github-ssh-key-fingerprints/" title="Previous Post: Checking your GitHub SSH Key Fingerprints">&laquo; Checking your GitHub SSH Key Fingerprints</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/07/05/getting-wireless-internet-working-on-centos-6-on-your-macbook-pro/" title="Next Post: Getting Wireless Internet Working on Centos 6 on your MacBook Pro">Getting Wireless Internet Working on Centos 6 on your MacBook Pro &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/08/04/learning-clojure/">Learning Clojure</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/09/04/viewing-git-history-in-summary-form/">Viewing Git History in Summary Form</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/07/05/getting-wireless-internet-working-on-centos-6-on-your-macbook-pro/">Getting Wireless Internet Working on Centos 6 on Your MacBook Pro</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/05/16/aws-summit/">AWS Summit, Melbourne</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/08/checking-your-github-ssh-key-fingerprints/">Checking Your GitHub SSH Key Fingerprints</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("clarenceb_oz", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/clarenceb_oz" class="twitter-follow-button" data-show-count="false">Follow @clarenceb_oz</a>
+  
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/clarbak?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/clarbak">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Clarence Bakirtzidis -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'clarencesblog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://clarenceb.github.io/blog/2012/05/16/aws-summit/';
+        var disqus_url = 'http://clarenceb.github.io/blog/2012/05/16/aws-summit/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

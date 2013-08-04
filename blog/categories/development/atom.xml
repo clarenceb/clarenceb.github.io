@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: development | Clarence's Coding Journal]]></title>
+  <link href="http://clarenceb.github.io/blog/categories/development/atom.xml" rel="self"/>
+  <link href="http://clarenceb.github.io/"/>
+  <updated>2013-08-04T23:35:21+10:00</updated>
+  <id>http://clarenceb.github.io/</id>
+  <author>
+    <name><![CDATA[Clarence Bakirtzidis]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Software Development Sea Change]]></title>
+    <link href="http://clarenceb.github.io/blog/2011/01/14/software-development-sea-change/"/>
+    <updated>2011-01-14T12:00:00+11:00</updated>
+    <id>http://clarenceb.github.io/blog/2011/01/14/software-development-sea-change</id>
+    <content type="html"><![CDATA[<p>Prior to joining ThoughtWorks I was mostly developing using Microsoft-based technologies on the .NET platform.  Whilst there are some nice things on this platform (C# being one of them) I felt it was time for a change and to try taking some risks by moving into the uncharted territory called &ldquo;open source&rdquo;.</p>
+
+<p>My first project, after 3 weeks on the beach (i.e. the bench, only more pleasant and sunny), was a Ruby on Rails project.  I had heard of Ruby and even had a passing stab at writing something equivalent of the &ldquo;15 minute blog&rdquo; website. This was the kind of challenge I was looking for &ndash; something out of my depth and exciting.  Lucky for me, the team I joined was <em>awesome</em> and because we pair quite extensively on ThoughtWorks projects I was somewhat productive after about 2 weeks.</p>
+
+<p>After a year of Ruby/Rails projects I still feel like a newbie compared to the 5.5+ years I spent doing C# (and then several years doing Java, C++, etc, before that).  Looking back I think learning &ldquo;Ruby&rdquo; and &ldquo;Rails&rdquo; was only part of the challenge.  I was really working with tools, IDEs, and platforms completely alien to me, such as: Mac OS X, CentOS and Ubuntu Linux, RubyMine IDE, TextMate, Cucumber, RSpec, Selenium, PostgreSQL, MySQL, dozens of Ruby gems, Git, Github, Mercurial, Android SDK, Eclipse, Maven, JMeter, and lots more.</p>
+
+<p>This initially made me feel quite uncomfortable as I was leaving my familiar Windows, Visual Studio and .NET environments behind.  With so many new variables introduced at the one time there was certainly plenty to keep me busy.  Apart from the technology landscape changes I was also thrust into the world of Agile software development.</p>
+
+<p>A year and a half later I am on a Ruby on Rails project again targeting smart phones (like Android and iPhone) and also desktop web users.  The whole infrastructure is deployed &ldquo;in the cloud&rdquo; using Amazon Web Services (AWS). It&rsquo;s really a great project with a great team.  I am still learning and still feel like a newbie at times but when I look back I can see how far I have come.</p>
+
+<p>Some of the books that inspired me along the way include:</p>
+
+<ul>
+<li><a href="http://pragprog.com/book/tpp/the-pragmatic-programmer">The Pragmatic Programmer: From Journeyman to Master</a></li>
+<li><a href="http://pragprog.com/book/pad/practices-of-an-agile-developer">Practices of an Agile Developer: Working in the Real World</a></li>
+<li><a href="http://pragprog.com/book/sdcoach/agile-coaching">Agile Coaching</a></li>
+<li><a href="http://www.amazon.com/Lean-Software-Development-Agile-Toolkit/dp/0321150783">Lean Software Development: An Agile Toolkit</a></li>
+<li><a href="http://pragprog.com/book/cfcar2/the-passionate-programmer">The Passionate Programmer: Creating a Remarkable Career in Software Development</a> (this one in particular, definitely worth the read!)</li>
+</ul>
+
+
+<p>So if you are feeling bored with your current job or looking for a change I can only say &ldquo;Just do it!&rdquo; (thanks to Nike for that one).</p>
+
+<p><strong><em>Side note</em></strong>: I have been on a .NET project as well in this time (mostly in a coaching role) and we certainly do our fair share of .NET work at ThoughtWorks.  .NET is something I am still keeping my eye on with .NET 4, ASP.NET MVC 3, and other interesting developments in the pipeline. However, now I would certainly consider open-source technologies and not limit myself to proprietary software.</p>
+]]></content>
+  </entry>
+  
+</feed>

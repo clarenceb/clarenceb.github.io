@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Getting Wireless Internet Working on Centos 6 on your MacBook Pro - Clarence's Coding Journal</title>
+  <meta name="author" content="Clarence Bakirtzidis">
+
+  
+  <meta name="description" content="At home I have been setting up CentOS 6.2 on a spare MacBook Pro (thanks to my IS friend at work) for learning about RHEL 6. Since I use a wireless &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://clarenceb.github.io/blog/2012/07/05/getting-wireless-internet-working-on-centos-6-on-your-macbook-pro">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Clarence's Coding Journal" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-33185810-3']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Clarence's Coding Journal</a></h1>
+  
+    <h2>My software development experiences.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:clarenceb.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About Me</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Getting Wireless Internet Working on Centos 6 on Your MacBook Pro</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-05T12:00:00+10:00" pubdate data-updated="true">Jul 5<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>At home I have been setting up CentOS 6.2 on a spare MacBook Pro (thanks to my IS friend at work) for learning about RHEL 6.  Since I use a wireless router, I wanted to get a wireless connection setup on the laptop.  The MacBook Pros use a Broadcom wireless NIC:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ lspci | grep Broadcom
+</span><span class='line'>04:00.0 Network controller: Broadcom Corporation BCM43224 802.11a/b/g/n Wireless LAN Controller (rev 01)</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I initially tried compiling and installing the Broadcom driver following the (roughly similar) steps described <a href="http://ktaraghi.blogspot.com.au/2011/08/how-to-install-broadcom-bcm4311-bcm4312.html">here</a> and <a href="http://wiki.centos.org/HowTos/Laptops/Wireless/Broadcom">here</a> but with no luck (#sadtrombone).</p>
+
+<p>Later, I saw a note at the top of the second page (referenced above) which linked to a source RPM called <a href="http://elrepo.org/tiki/wl-kmod">wl-kmod</a> on <a href="http://elrepo.org/">ELRepo.org</a>.  I thought I&rsquo;d give it one more try so I followed the relatively short and simple instructions on the wl-kmod page and it worked without a hitch!</p>
+
+<p>The steps involve you installing some development tool packages, downloading a SRPM for wl-kmod, downloading the source for the Broadcom driver (64-bit in my case), building and installing the final RPM for wl-kmod.  Once you either reboot or manually add the Linux kernal modules from the command line you see a new &ldquo;Wireless Networks&rdquo; section appear under the already existing &ldquo;Wired Networks&rdquo; section on the top right of your desktop (if you are running one that is).</p>
+
+<p>You can then proceed to select one of the wireless networks that are detected (or manually add one yourself) and enter the wireless security details.</p>
+
+<p>From the command line you will see the new wireless interface:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>$ ifconfig eth1
+</span><span class='line'>eth1    Link encap:Ethernet HWaddr:xxxxxxxxxxxx
+</span><span class='line'>        inet addr:xxxxxxxxxx
+</span><span class='line'>        ...etc...</span></code></pre></td></tr></table></div></figure>
+
+
+<p>From then onwards it should just work!</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Clarence Bakirtzidis</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-05T12:00:00+10:00" pubdate data-updated="true">Jul 5<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/centos/'>centos</a>, <a class='category' href='/blog/categories/macbookpro/'>macbookpro</a>, <a class='category' href='/blog/categories/networking/'>networking</a>, <a class='category' href='/blog/categories/wireless/'>wireless</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/05/16/aws-summit/" title="Previous Post: AWS Summit, Melbourne">&laquo; AWS Summit, Melbourne</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/09/04/viewing-git-history-in-summary-form/" title="Next Post: Viewing Git History in Summary Form">Viewing Git History in Summary Form &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/08/04/learning-clojure/">Learning Clojure</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/09/04/viewing-git-history-in-summary-form/">Viewing Git History in Summary Form</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/07/05/getting-wireless-internet-working-on-centos-6-on-your-macbook-pro/">Getting Wireless Internet Working on Centos 6 on Your MacBook Pro</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/05/16/aws-summit/">AWS Summit, Melbourne</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/08/checking-your-github-ssh-key-fingerprints/">Checking Your GitHub SSH Key Fingerprints</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("clarenceb_oz", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/clarenceb_oz" class="twitter-follow-button" data-show-count="false">Follow @clarenceb_oz</a>
+  
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/clarbak?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/clarbak">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Clarence Bakirtzidis -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'clarencesblog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://clarenceb.github.io/blog/2012/07/05/getting-wireless-internet-working-on-centos-6-on-your-macbook-pro/';
+        var disqus_url = 'http://clarenceb.github.io/blog/2012/07/05/getting-wireless-internet-working-on-centos-6-on-your-macbook-pro/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

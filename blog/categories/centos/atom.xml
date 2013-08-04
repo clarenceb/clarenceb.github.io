@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: centos | Clarence's Coding Journal]]></title>
+  <link href="http://clarenceb.github.io/blog/categories/centos/atom.xml" rel="self"/>
+  <link href="http://clarenceb.github.io/"/>
+  <updated>2013-08-04T23:35:21+10:00</updated>
+  <id>http://clarenceb.github.io/</id>
+  <author>
+    <name><![CDATA[Clarence Bakirtzidis]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Getting Wireless Internet Working on Centos 6 on your MacBook Pro]]></title>
+    <link href="http://clarenceb.github.io/blog/2012/07/05/getting-wireless-internet-working-on-centos-6-on-your-macbook-pro/"/>
+    <updated>2012-07-05T12:00:00+10:00</updated>
+    <id>http://clarenceb.github.io/blog/2012/07/05/getting-wireless-internet-working-on-centos-6-on-your-macbook-pro</id>
+    <content type="html"><![CDATA[<p>At home I have been setting up CentOS 6.2 on a spare MacBook Pro (thanks to my IS friend at work) for learning about RHEL 6.  Since I use a wireless router, I wanted to get a wireless connection setup on the laptop.  The MacBook Pros use a Broadcom wireless NIC:
+<code>
+$ lspci | grep Broadcom
+04:00.0 Network controller: Broadcom Corporation BCM43224 802.11a/b/g/n Wireless LAN Controller (rev 01)
+</code>
+I initially tried compiling and installing the Broadcom driver following the (roughly similar) steps described <a href="http://ktaraghi.blogspot.com.au/2011/08/how-to-install-broadcom-bcm4311-bcm4312.html">here</a> and <a href="http://wiki.centos.org/HowTos/Laptops/Wireless/Broadcom">here</a> but with no luck (#sadtrombone).</p>
+
+<p>Later, I saw a note at the top of the second page (referenced above) which linked to a source RPM called <a href="http://elrepo.org/tiki/wl-kmod">wl-kmod</a> on <a href="http://elrepo.org/">ELRepo.org</a>.  I thought I&rsquo;d give it one more try so I followed the relatively short and simple instructions on the wl-kmod page and it worked without a hitch!</p>
+
+<p>The steps involve you installing some development tool packages, downloading a SRPM for wl-kmod, downloading the source for the Broadcom driver (64-bit in my case), building and installing the final RPM for wl-kmod.  Once you either reboot or manually add the Linux kernal modules from the command line you see a new &ldquo;Wireless Networks&rdquo; section appear under the already existing &ldquo;Wired Networks&rdquo; section on the top right of your desktop (if you are running one that is).</p>
+
+<p>You can then proceed to select one of the wireless networks that are detected (or manually add one yourself) and enter the wireless security details.</p>
+
+<p>From the command line you will see the new wireless interface:
+```
+$ ifconfig eth1
+eth1    Link encap:Ethernet HWaddr:xxxxxxxxxxxx</p>
+
+<pre><code>    inet addr:xxxxxxxxxx
+    ...etc...
+</code></pre>
+
+<p>```
+From then onwards it should just work!</p>
+]]></content>
+  </entry>
+  
+</feed>

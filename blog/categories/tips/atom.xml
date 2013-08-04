@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: tips | Clarence's Coding Journal]]></title>
+  <link href="http://clarenceb.github.io/blog/categories/tips/atom.xml" rel="self"/>
+  <link href="http://clarenceb.github.io/"/>
+  <updated>2013-08-04T23:35:21+10:00</updated>
+  <id>http://clarenceb.github.io/</id>
+  <author>
+    <name><![CDATA[Clarence Bakirtzidis]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Viewing Git History in Summary Form]]></title>
+    <link href="http://clarenceb.github.io/blog/2012/09/04/viewing-git-history-in-summary-form/"/>
+    <updated>2012-09-04T12:00:00+10:00</updated>
+    <id>http://clarenceb.github.io/blog/2012/09/04/viewing-git-history-in-summary-form</id>
+    <content type="html"><![CDATA[<p>I use this one all the time for getting a nice summary of git commits:
+<code>
+git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short
+</code>
+Here&rsquo;s what the output looks like (used on the Homebrew git repo):
+<code>
+* d66c9f3 2011-03-16 | Boost version bump to 1.46.1 [Clint Shryock]
+* 43019ac 2011-03-16 | Update JRuby to 1.6.0. [Aku Kotkavuo]
+* 8ffc126 2011-03-16 | Erlang R14B02 [Yurii Rashkovskii]
+* 24f4ad5 2011-03-16 | Gearman 0.18 [Clint Shryock]
+* ec6521e 2011-03-15 | Fix keg-only, non-system dupes [Adam Vandenberg]
+* fa2f638 2011-03-15 | Document keg-only system duplicates. [Adam Vandenberg]
+* 3338b14 2011-03-15 | install - change keg-only warning [Adam Vandenberg]
+* 9eb7c19 2011-03-15 | keg-only: provide more info about system dupes [Adam Vandenberg]
+* d600846 2011-03-15 | scantailor: add libtiff dependency [Adam Vandenberg]
+* 309ae6b 2011-03-15 | keg - use proper inheritance style [Adam Vandenberg]
+* 3b25f34 2011-03-15 | Add new fontforge git repo as HEAD [codingisacopingstrategy]
+* ac95e5c 2011-03-15 | New formula: mpg321 [Luca Spiller]
+* 48c0ab0 2011-03-15 | Fix homepage audit warnings [Adam Vandenberg]
+</code>
+The output will also show any tags and visually show branches and merges.</p>
+
+<p>You can then add it to your git config as an alias:
+<code>
+[alias]
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+</code>
+And use it like so:
+<code>
+git hist
+</code>
+I got this tip from the following git tutorial site: <a href="http://gitimmersion.com/">http://gitimmersion.com</a></p>
+]]></content>
+  </entry>
+  
+</feed>

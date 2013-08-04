@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Viewing Git History in Summary Form - Clarence's Coding Journal</title>
+  <meta name="author" content="Clarence Bakirtzidis">
+
+  
+  <meta name="description" content="I use this one all the time for getting a nice summary of git commits: 1
+git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short Here& &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://clarenceb.github.io/blog/2012/09/04/viewing-git-history-in-summary-form">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Clarence's Coding Journal" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-33185810-3']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Clarence's Coding Journal</a></h1>
+  
+    <h2>My software development experiences.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:clarenceb.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About Me</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Viewing Git History in Summary Form</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-04T12:00:00+10:00" pubdate data-updated="true">Sep 4<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I use this one all the time for getting a nice summary of git commits:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Here&rsquo;s what the output looks like (used on the Homebrew git repo):</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>* d66c9f3 2011-03-16 | Boost version bump to 1.46.1 [Clint Shryock]
+</span><span class='line'>* 43019ac 2011-03-16 | Update JRuby to 1.6.0. [Aku Kotkavuo]
+</span><span class='line'>* 8ffc126 2011-03-16 | Erlang R14B02 [Yurii Rashkovskii]
+</span><span class='line'>* 24f4ad5 2011-03-16 | Gearman 0.18 [Clint Shryock]
+</span><span class='line'>* ec6521e 2011-03-15 | Fix keg-only, non-system dupes [Adam Vandenberg]
+</span><span class='line'>* fa2f638 2011-03-15 | Document keg-only system duplicates. [Adam Vandenberg]
+</span><span class='line'>* 3338b14 2011-03-15 | install - change keg-only warning [Adam Vandenberg]
+</span><span class='line'>* 9eb7c19 2011-03-15 | keg-only: provide more info about system dupes [Adam Vandenberg]
+</span><span class='line'>* d600846 2011-03-15 | scantailor: add libtiff dependency [Adam Vandenberg]
+</span><span class='line'>* 309ae6b 2011-03-15 | keg - use proper inheritance style [Adam Vandenberg]
+</span><span class='line'>* 3b25f34 2011-03-15 | Add new fontforge git repo as HEAD [codingisacopingstrategy]
+</span><span class='line'>* ac95e5c 2011-03-15 | New formula: mpg321 [Luca Spiller]
+</span><span class='line'>* 48c0ab0 2011-03-15 | Fix homepage audit warnings [Adam Vandenberg]</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The output will also show any tags and visually show branches and merges.</p>
+
+<p>You can then add it to your git config as an alias:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>[alias]
+</span><span class='line'>  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And use it like so:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git hist</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I got this tip from the following git tutorial site: <a href="http://gitimmersion.com/">http://gitimmersion.com</a></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Clarence Bakirtzidis</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-04T12:00:00+10:00" pubdate data-updated="true">Sep 4<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/git/'>git</a>, <a class='category' href='/blog/categories/scm/'>scm</a>, <a class='category' href='/blog/categories/tips/'>tips</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/07/05/getting-wireless-internet-working-on-centos-6-on-your-macbook-pro/" title="Previous Post: Getting Wireless Internet Working on Centos 6 on your MacBook Pro">&laquo; Getting Wireless Internet Working on Centos 6 on your MacBook Pro</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/08/04/learning-clojure/" title="Next Post: Learning Clojure">Learning Clojure &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/08/04/learning-clojure/">Learning Clojure</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/09/04/viewing-git-history-in-summary-form/">Viewing Git History in Summary Form</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/07/05/getting-wireless-internet-working-on-centos-6-on-your-macbook-pro/">Getting Wireless Internet Working on Centos 6 on Your MacBook Pro</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/05/16/aws-summit/">AWS Summit, Melbourne</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/03/08/checking-your-github-ssh-key-fingerprints/">Checking Your GitHub SSH Key Fingerprints</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("clarenceb_oz", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/clarenceb_oz" class="twitter-follow-button" data-show-count="false">Follow @clarenceb_oz</a>
+  
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/clarbak?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/clarbak">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Clarence Bakirtzidis -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'clarencesblog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://clarenceb.github.io/blog/2012/09/04/viewing-git-history-in-summary-form/';
+        var disqus_url = 'http://clarenceb.github.io/blog/2012/09/04/viewing-git-history-in-summary-form/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

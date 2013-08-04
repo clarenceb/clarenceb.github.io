@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: git | Clarence's Coding Journal]]></title>
+  <link href="http://clarenceb.github.io/blog/categories/git/atom.xml" rel="self"/>
+  <link href="http://clarenceb.github.io/"/>
+  <updated>2013-08-04T23:35:21+10:00</updated>
+  <id>http://clarenceb.github.io/</id>
+  <author>
+    <name><![CDATA[Clarence Bakirtzidis]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Viewing Git History in Summary Form]]></title>
+    <link href="http://clarenceb.github.io/blog/2012/09/04/viewing-git-history-in-summary-form/"/>
+    <updated>2012-09-04T12:00:00+10:00</updated>
+    <id>http://clarenceb.github.io/blog/2012/09/04/viewing-git-history-in-summary-form</id>
+    <content type="html"><![CDATA[<p>I use this one all the time for getting a nice summary of git commits:
+<code>
+git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short
+</code>
+Here&rsquo;s what the output looks like (used on the Homebrew git repo):
+<code>
+* d66c9f3 2011-03-16 | Boost version bump to 1.46.1 [Clint Shryock]
+* 43019ac 2011-03-16 | Update JRuby to 1.6.0. [Aku Kotkavuo]
+* 8ffc126 2011-03-16 | Erlang R14B02 [Yurii Rashkovskii]
+* 24f4ad5 2011-03-16 | Gearman 0.18 [Clint Shryock]
+* ec6521e 2011-03-15 | Fix keg-only, non-system dupes [Adam Vandenberg]
+* fa2f638 2011-03-15 | Document keg-only system duplicates. [Adam Vandenberg]
+* 3338b14 2011-03-15 | install - change keg-only warning [Adam Vandenberg]
+* 9eb7c19 2011-03-15 | keg-only: provide more info about system dupes [Adam Vandenberg]
+* d600846 2011-03-15 | scantailor: add libtiff dependency [Adam Vandenberg]
+* 309ae6b 2011-03-15 | keg - use proper inheritance style [Adam Vandenberg]
+* 3b25f34 2011-03-15 | Add new fontforge git repo as HEAD [codingisacopingstrategy]
+* ac95e5c 2011-03-15 | New formula: mpg321 [Luca Spiller]
+* 48c0ab0 2011-03-15 | Fix homepage audit warnings [Adam Vandenberg]
+</code>
+The output will also show any tags and visually show branches and merges.</p>
+
+<p>You can then add it to your git config as an alias:
+<code>
+[alias]
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+</code>
+And use it like so:
+<code>
+git hist
+</code>
+I got this tip from the following git tutorial site: <a href="http://gitimmersion.com/">http://gitimmersion.com</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Checking your GitHub SSH Key Fingerprints]]></title>
+    <link href="http://clarenceb.github.io/blog/2012/03/08/checking-your-github-ssh-key-fingerprints/"/>
+    <updated>2012-03-08T12:00:00+11:00</updated>
+    <id>http://clarenceb.github.io/blog/2012/03/08/checking-your-github-ssh-key-fingerprints</id>
+    <content type="html"><![CDATA[<p>Regular GitHub users are probably aware of the recent GitHub <a href="https://github.com/blog/1068-public-key-security-vulnerability-and-mitigation">security vulnerability</a> that was exploited by this <a href="http://homakov.blogspot.com.au/2012/03/im-disappoint-github.html">fellow</a>. You&rsquo;ve also probably just received instructions via email to <a href="https://github.com/settings/ssh/audit">audit</a> your SSH keys.  An easy way to do this is to run following command on your SSH key(s) stored on your computer:
+<code>
+ssh-keygen -lf &lt;path_to_your_public_ssh_key&gt;
+</code>
+This will then display the fingerprint of your public key which you can then compare to fingerprint displayed next to your public key on GitHub.</p>
+
+<p>Example:
+<code>
+ssh-keygen -lf dummy.pub  2048 d3:c7:8d:73:b4:6e:00:5d:ce:c6:85:04:9e:6c:67:51 dummy.pub (RSA)
+</code>
+In this case, the fingerprint is the part:
+<code>
+d3:c7:8d:73:b4:6e:00:5d:ce:c6:85:04:9e:6c:67:51
+</code></p>
+]]></content>
+  </entry>
+  
+</feed>

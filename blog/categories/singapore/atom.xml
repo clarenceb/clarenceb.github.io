@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: singapore | Clarence's Coding Journal]]></title>
+  <link href="http://clarenceb.github.io/blog/categories/singapore/atom.xml" rel="self"/>
+  <link href="http://clarenceb.github.io/"/>
+  <updated>2013-08-04T23:35:21+10:00</updated>
+  <id>http://clarenceb.github.io/</id>
+  <author>
+    <name><![CDATA[Clarence Bakirtzidis]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[RedDot Ruby Conf, Singapore]]></title>
+    <link href="http://clarenceb.github.io/blog/2011/05/01/reddot-ruby-conf/"/>
+    <updated>2011-05-01T12:00:00+10:00</updated>
+    <id>http://clarenceb.github.io/blog/2011/05/01/reddot-ruby-conf</id>
+    <content type="html"><![CDATA[<p>On the Easter weekend I attended Singapore&rsquo;s first ever Ruby conference (called &ldquo;<a href="http://reddotrubyconf.com/">RedDotRubyConf</a>&rdquo;).  It was held at the <a href="http://www.smu.edu.sg/">Singapore Management University</a> (SMU) on Friday, 22nd and Saturday, 23rd April 2011.  It attracted around 240 attendees from Singapore, Hong Kong, Indonesia, Phillipines, Vietnam, Cambodia, Japan, Australia, USA, and other countries.</p>
+
+<p>The first day started off with registrations where we each got a conference t-shirt and a bag of goodies including a <a href="http://twitpic.com/4o0lpt">Field Notes Memo Book</a> and GitHub sponsored <a href="http://twitpic.com/4o0nj1">drink vouchers</a>.  After downing our favourite beverages (coffee, Coke Zero, tea or bottled water) the welcome note started off with <a href="https://twitter.com/#!/andycroll">Andy Croll</a> (conference organiser).</p>
+
+<p>The first speaker was <a href="https://twitter.com/#!/imf">Ian McFarland</a> from <a href="http://pivotallabs.com/">Pivotal Labs</a> (they are one of the main sponsors of the event), making up for <a href="http://en.wikipedia.org/wiki/Yukihiro_Matsumoto">Matz&rsquo;s</a> late arrival to the stage.  He spoke about Ruby and Agile with some key points on test-driving everything, TDD/BDD, iterative development, continuous integration, the importance and benefits of pair-programming, keeping an &ldquo;anchor&rdquo; team member on a project when members roll-off and roll-on to get them up to speed, having productive workspaces and not working more than 8 hours a day.  He also gave a nice insight into how Pivotal Labs work with clients on projects and a look at their office space &ndash; quite impressive.</p>
+
+<p>Matz (<a href="http://en.wikipedia.org/wiki/Yukihiro_Matsumoto">Yukihiro Matsumoto</a>) came on second and was a much anticipated speaker for obvious reasons! He spoke about Ruby&rsquo;s humble beginnings and how it has grown over the years to where it is today &ndash; a large, vibrant, inclusive and friendly community (MINSWAN &ndash; &ldquo;Matz is nice, so we are nice&rdquo;).  Even <a href="http://martinfowler.com/">Martin Fowler</a> got a special mention as being one of these nice people in the community.  He also mentioned that although Ruby is not the fastest, simplest, or easiest language to learn, it does have &ldquo;The Nice Community&rdquo; which he sees as very important and that other open source software sometimes lacks.  Although Ruby is productive and fun, he thinks we should keep advancing the technology before &ldquo;the shark&rdquo; catches up to it/us; this will ensure Ruby has a long and prosperous life ahead.</p>
+
+<p>One last thing Matz talked about was the Ruby Rite VM that he is currently working on and plans to release by the end of 2011.  It targets embedded environments and has a very configurable and component based approach to allow a small footprint that only includes the part of Ruby that are needed.  He thinks Rite VM will give the Lua programming language a run for its money in the embedded programming space since Ruby is a fully-featured objected-oriented language.</p>
+
+<p>The remaining talks were very good and covered diverse topics like using the <a href="http://www.r-project.org/">&lsquo;R&rsquo; programming language</a> from Ruby, Agile testing, deploying with <a href="http://wiki.opscode.com/display/chef/Home">Chef</a>, multi-tenancy in Rails,  Agile in real-life (a client&rsquo;s view), advanced git techniques, under the covers in Rails 3, Smalltalk and what Ruby borrowed from it, building financial apps in Rails, how to make outsourcing Rails projects successful, and lots more cool topics.</p>
+
+<p>Overall, I was very impressed by the event because it was well organised, it had quality presenters, the content was interesting, and it had clearly evident theme of participation, inclusiveness, helpfulness of the Ruby community and giving back to the community.  Quite a few big names (both companies and individuals) in the Ruby community were present which made the conference even more of a success.  It looks like I was the only ThoughWorker there but I did meet a few fellow Australians and bumped into an ex-client developer, <a href="http://twitpic.com/4o0yye">Keith Pitt</a>, who worked on a Rails project with me about a year ago.</p>
+
+<p>Other than Ruby and its community, the other main theme was around Agile software development.  I think Pivotal Labs stole the show as they had a few speakers and attendees present and they explained and showed how they work on their projects.</p>
+
+<p>Practically every company that presented said they were hiring Ruby developers and on the second day of the conference there was a hiring fair so that companies didn&rsquo;t have to scramble over themselves and poach from each other.  They also ran a coding competition with a MacBook Air as the prize (put up by <a href="http://www.viki.com/">ViKi</a>) and no doubt used the results of that to put forward some job offers.</p>
+
+<p>I think there is a lot of interest in Ruby and Agile in Singapore judging by the attendance record and the fact that attendees came from all over the world.</p>
+
+<p>The highlights of the conference for me would have to be:</p>
+
+<ul>
+<li>Yukihiro &lsquo;Matz&rsquo; Matsumoto &ndash; the creator of the Ruby language &ndash; presenting his view of the future of Ruby (check out my <a href="http://twitpic.com/4rx404">fan pic</a> and also who he thinks is part of the <a href="http://twitpic.com/4o19pk">Nice Community</a> hehe)</li>
+<li>Dave Thomas &ndash; Pragmatic Programmers, his talk was well received by the locals</li>
+<li>Tom Preston-Werner &ndash; the co-founder of Github (mostly for the free <a href="http://twitpic.com/4o0nj1">drink vouchers</a> perhaps!)</li>
+</ul>
+
+
+<p>I&rsquo;m looking for to attending again next year!</p>
+]]></content>
+  </entry>
+  
+</feed>

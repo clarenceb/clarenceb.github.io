@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://clarenceb.github.io/sitemap.xml 
