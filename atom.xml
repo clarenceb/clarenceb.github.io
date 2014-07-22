@@ -4,7 +4,7 @@
   <title><![CDATA[Clarence's Coding Journal]]></title>
   <link href="http://clarenceb.github.io/atom.xml" rel="self"/>
   <link href="http://clarenceb.github.io/"/>
-  <updated>2013-08-04T23:35:21+10:00</updated>
+  <updated>2014-07-22T17:18:45+10:00</updated>
   <id>http://clarenceb.github.io/</id>
   <author>
     <name><![CDATA[Clarence Bakirtzidis]]></name>
@@ -110,7 +110,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Getting Wireless Internet Working on Centos 6 on your MacBook Pro]]></title>
+    <title type="html"><![CDATA[Getting Wireless Internet Working on Centos 6 on Your MacBook Pro]]></title>
     <link href="http://clarenceb.github.io/blog/2012/07/05/getting-wireless-internet-working-on-centos-6-on-your-macbook-pro/"/>
     <updated>2012-07-05T12:00:00+10:00</updated>
     <id>http://clarenceb.github.io/blog/2012/07/05/getting-wireless-internet-working-on-centos-6-on-your-macbook-pro</id>
@@ -178,7 +178,7 @@
   </entry>
   
   <entry>
-    <title type="html"><![CDATA[Checking your GitHub SSH Key Fingerprints]]></title>
+    <title type="html"><![CDATA[Checking Your GitHub SSH Key Fingerprints]]></title>
     <link href="http://clarenceb.github.io/blog/2012/03/08/checking-your-github-ssh-key-fingerprints/"/>
     <updated>2012-03-08T12:00:00+11:00</updated>
     <id>http://clarenceb.github.io/blog/2012/03/08/checking-your-github-ssh-key-fingerprints</id>
